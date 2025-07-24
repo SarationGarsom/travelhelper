@@ -1,7 +1,6 @@
 import requests
 import tkinter as tk
-Firstinput="767438ad237c8f1dd99241f4"
-#Firstinput=input("https://www.exchangerate-api.com/のアカウントで取得したキーを入力")
+Firstinput=input("https://www.exchangerate-api.com/のアカウントで取得したキーを入力")
 ratesAPI=True
 if ratesAPI==True:
     rates = requests.get("https://v6.exchangerate-api.com/v6/{}/latest/USD".format(Firstinput)).json()
